@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".list_menu"
+    android:background="@drawable/home_wallpaper">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Menu Utama"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#6effffff" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:text="TENTANG STOCK TAKE"
+        android:id="@+id/btst_about"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:background="#6effc284"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="15dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:text="PENGGUNAAN SCANNER RF"
+        android:id="@+id/btrf"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/btst_about"
+        android:layout_toEndOf="@+id/btst_about"
+        android:background="#77afd0ff"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="15dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:text="MASALAH"
+        android:id="@+id/btmaslah"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btst_about"
+        android:layout_alignParentStart="true"
+        android:background="#77fd9093"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="15dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:text="BANTUAN"
+        android:id="@+id/btbant"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btrf"
+        android:layout_alignStart="@+id/btrf"
+        android:background="#7789faa5"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="15dp" />
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.abimanyuag.mystocktake.registrasi"
+    android:background="@drawable/home_wallpaper">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Registrasi"
+        android:id="@+id/textView21"
+        android:textSize="30dp"
+        android:textColor="#6e2f6ea8"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar"
+        android:id="@+id/btdaf"
+        android:background="#6e2f6ea8"
+        android:textSize="15dp"
+        android:textColor="#fefefe"
+        android:textStyle="bold"
+        android:focusableInTouchMode="true"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/txnrp"
+        android:layout_alignStart="@+id/txnrp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SKIP"
+        android:id="@+id/btskip"
+        android:background="#00ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="15dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:cursorVisible="false"
+        android:inputType="number"
+        android:maxLength="8"
+        android:ems="10"
+        android:id="@+id/txnrp"
+        android:layout_above="@+id/btdaf"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukan NRP"
+        android:id="@+id/textView17"
+        android:layout_above="@+id/txnrp"
+        android:layout_alignStart="@+id/txnrp"
+        android:textSize="15dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
+        android:cursorVisible="false"
+        android:maxLength="20"
+        android:ems="10"
+        android:id="@+id/txname"
+        android:layout_above="@+id/textView17"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_toStartOf="@+id/btskip"
+        android:textSize="15dp"
+        android:layout_alignEnd="@+id/txnrp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukan Nama"
+        android:id="@+id/textView18"
+        android:layout_above="@+id/txname"
+        android:layout_alignStart="@+id/txname"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginTop="10dp"
+        android:text="* Dikenakan biaya SMS sesuai tarif operator"
+        android:id="@+id/textView28"
+        android:gravity="center"
+        android:layout_below="@+id/btdaf"
+        android:layout_centerHorizontal="true"
+        android:textColor="#2f6ea8" />
+
+</RelativeLayout>

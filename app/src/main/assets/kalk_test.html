@@ -1,0 +1,49 @@
+<body><center>
+<form>
+<font face="calibri">
+<table>
+<table  bgcolor="#FFFFFF" border=2 width=70 height=80 cellpadding=1 cellspacing=5>
+<td colspan=3>
+<input type="reset" value="Reset"></td><td colspan=3><input  type="button" value="Hasil" onClick="get();"></td>
+<tr>
+<td colspan=3 align=middle bgcolor="#FFFFFF">
+<input type="text" id="txt1" size=24 value="0" width=100% >
+Case Unit</td><td colspan=3 bgcolor="#FFFFFF">
+<input type="text" id="txt3" name="total" type="Text" size=24 value="0" width=100% >
+Total inner dalam carton</td></tr>
+<tr><td colspan=3 align=middle bgcolor="#FFFFFF">
+<input type="text" id="txt2" size=24 value="0" width=100% >
+Pack</td><td colspan=3 align=middle bgcolor="#FFFFFF">
+<input type="text" id="txt4" size=24 value="0" width=100% >
+Jumlah Carton
+</td></tr>
+<tr><td colspan=6 align="center">
+<input type="button" id="bt" value="Hasil" onClick="get2();">
+<input type="text" id="txt5" size=24 value="0" width=100% ><br>
+Total Inner (Keseluruhan)
+</td>
+</tr>
+</table>
+</table>
+</font>
+</FORM>
+</center>
+</body>
+<script>
+function get() {
+      var txtFirstNumberValue = document.getElementById('txt1').value;
+      var txtSecondNumberValue = document.getElementById('txt2').value;
+      var result = parseInt(txtFirstNumberValue) / parseInt(txtSecondNumberValue);
+      if (!isNaN(result)) {
+         document.getElementById('txt3').value = result;
+      }
+}
+function get2() {
+      var txtFirstNumberValue = document.getElementById('txt3').value;
+      var txtSecondNumberValue = document.getElementById('txt4').value;
+      var result = parseInt(txtFirstNumberValue) * parseInt(txtSecondNumberValue);
+      if (!isNaN(result)) {
+         document.getElementById('txt5').value = result;
+      }
+}
+</script>

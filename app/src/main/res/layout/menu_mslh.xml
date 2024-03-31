@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".menu_mslh"
+    android:background="@drawable/home_wallpaper">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ada Masalah ?"
+        android:id="@+id/textView2"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#6e2f6ea8"
+        android:typeface="normal"
+        android:textStyle="bold" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Product kurang dari jumlah pack size"
+        android:id="@+id/bt_krg"
+        android:layout_marginTop="50dp"
+        android:focusableInTouchMode="false"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/bt_lbihplu"
+        android:textSize="18dp"
+        android:background="#6e2f6ea8"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Lebih dari satu product di satu lokasi"
+        android:id="@+id/bt_lbihplu"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/bt_krg"
+        android:layout_alignParentStart="true"
+        android:textSize="18dp"
+        android:background="#6e2f6ea8"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Lokasi di pick slot salah product"
+        android:id="@+id/bt_slhslot"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/bt_lbihplu"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/bt_lbihplu"
+        android:textSize="18dp"
+        android:background="#6e2f6ea8"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Lokasi di reserve salah product"
+        android:id="@+id/bt_slhresv"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/bt_slhslot"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/bt_slhslot"
+        android:textSize="18dp"
+        android:background="#6e2f6ea8"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Lokasi kosong/tidak ada product"
+        android:id="@+id/bt_ksg"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/bt_slhresv"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/bt_slhresv"
+        android:textSize="18dp"
+        android:background="#6e2f6ea8"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Product not found"
+        android:id="@+id/bt_ntfnd"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/bt_ksg"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/bt_ksg"
+        android:textSize="18dp"
+        android:background="#6e2f6ea8"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

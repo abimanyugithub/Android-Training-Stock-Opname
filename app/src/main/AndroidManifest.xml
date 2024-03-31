@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.abimanyuag.mystocktake">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity
+            android:name=".menu_awal"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".list_menu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mslh"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tentang_st"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tutor_rf"
+            android:screenOrientation="portrait" />
+        <activity android:name=".scan_slot" />
+        <activity android:name=".menu_rf" />
+        <activity android:name=".scan_reserv" />
+        <activity android:name=".lok_kosong" />
+        <activity android:name=".slot_slhbrg" />
+        <activity android:name=".rsv_slhbrg" />
+        <activity android:name=".prod_nfound" />
+        <activity android:name=".krgbrg_packsize" />
+        <activity android:name=".brglbh_item" />
+        <activity android:name=".kalkulator"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".registrasi" />
+        <activity android:name=".bantuan" />
+        <activity android:name=".kalkulator_gen"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".about_me" />
+        <activity android:name=".cari_saya" />
+        <activity android:name=".my_web"></activity>
+    </application>
+
+</manifest>
